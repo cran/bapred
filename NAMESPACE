@@ -1,0 +1,31 @@
+export(aprior, avedist, avedistTwo, ba, baaddon, bametric, bivprob, 
+           bprior, build.design, combatba, combatbaaddon, corba, design.mat, 
+           diffexprm, diffexprmAfterBR, Dt, emfahighdim, fabatch, fabatchaddon, 
+           fuzzywilcox, it.sol, kldist, kldistTwo, list.batch, meancenter, 
+           meancenteraddon, mypvcaBatchAssess, nbfactors, noba, nobaaddon, 
+           pcplot, plotcomp, postmean, postvar, pvcam, ratioa, ratioaaddon, 
+           ratiog, ratiogaddon, sepscore, sepscoreTwo, skewdiv, skewdivTwo, 
+           standardize, standardizeaddon, svaba, svabaaddon, VarInflation)
+
+S3method(print, combat)
+S3method(print, fabatch)
+S3method(print, meancenter)
+S3method(print, noba)
+S3method(print, ratioa)
+S3method(print, ratiog)
+S3method(print, standardize)
+S3method(print, svatrain)
+
+import(glmnet)
+import(lme4)
+importFrom("MASS", "kde2d")
+import(sva)
+
+importFrom("grDevices", "rainbow")
+importFrom("graphics", "abline", "contour", "lines", "par", "plot",
+           "points", "title")
+importFrom("stats", "coef", "cor", "density", "dist", "dnorm", "ecdf",
+           "lm", "median", "model.matrix", "na.omit", "prcomp",
+           "predict", "qnorm", "qqline", "qqnorm", "qqplot", "rgamma",
+           "rnorm", "runif", "sd", "var")
+importFrom("utils", "combn")
