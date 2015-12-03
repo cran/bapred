@@ -23,23 +23,38 @@ function(x, y, batch, nbf=NULL, algorithm="fast") {
       numsv <- sva::num.sv(dat=t(x[1:ncol(x),]), mod=cbind(1, as.numeric(y[1:ncol(x)])-1))
   }
   
-  svobj <- sva::sva(dat=t(x), mod=cbind(1, as.numeric(y)-1), n.sv=numsv)
+  if (numsv!=0) {
+	
+    svobj <- sva::sva(dat = t(x), mod = cbind(1, as.numeric(y) - 
+        1), n.sv = numsv)
+			
+    mod <- cbind(1, as.numeric(y) - 1)
+    nmod <- dim(mod)[2]
+    mod <- cbind(mod, svobj$sv)
+    gammahat <- (t(x) %*% mod %*% solve(t(mod) %*% mod))[, (nmod + 
+        1):(nmod + numsv)]
+			
+    db = t(x) - gammahat %*% t(svobj$sv)
+    xadj <- t(db)
+		
+    params <- list(xadj = xadj, xtrain = x, ytrain = y, svobj = svobj, 
+        algorithm = algorithm)
+		
+  }
+  else {
 
-  mod <- cbind(1, as.numeric(y)-1)
-  nmod <- dim(mod)[2]
-  mod <- cbind(mod, svobj$sv)    
-  gammahat <- (t(x) %*% mod %*% solve(t(mod) %*% mod))[, (nmod + 
-          1):(nmod + numsv)]
-
-  db = t(x) - gammahat %*% t(svobj$sv)
-  xadj <- t(db)
-
-  params <- list(xadj=xadj, xtrain=x, ytrain=y, svobj=svobj, algorithm=algorithm)
+    warning("Estimated number of factors was zero.")  
+    xadj <- x
+    params <- list(xadj = xadj, xtrain = x, ytrain = y, svobj = NULL, 
+        algorithm = algorithm)
+		
+  }    
+	
   params$nbatches <- length(unique(batch))
   params$batch <- batch
-  
+	
   class(params) <- "svatrain"
-  
+
   return(params)
 
 }

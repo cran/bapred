@@ -1,4 +1,4 @@
-488b4a693052fefd44945c68b7a641ea *DESCRIPTION
+97b987ecb65870a0690a9cd6b555d0a0 *DESCRIPTION
 c1d91982d6aed4922338386f7fd46272 *NAMESPACE
 09a7359536e98fd4e181510a9adf4ee7 *R/Dt.R
 8d3460257688e607b1b7d353ccb5dea9 *R/VarInflation.R
@@ -55,8 +55,8 @@ bb46f1af7a971e3abecc3ba0e74755eb *R/ratiog.R
 976f1c6bf57885c0c9ba1d3e39e274d3 *R/skewdivTwo.R
 a0fa03092b4080279463132028be0c2a *R/standardize.R
 cbcb6ddfc64ac9be24c40be9d6dba37e *R/standardizeaddon.R
-39e3e3283aeba44d74bc158d08263cb2 *R/svaba.R
-c64e727b3afdb9bd292949cf36aae777 *R/svabaaddon.R
+14ab2f88632317c0e5ce3212589271d6 *R/svaba.R
+95bde7faafde12bab11cb6644a08b62d *R/svabaaddon.R
 2b5d4c8ff9f11c021f236f2c3b074c0a *data/autism.rda
 743c207ad8b91a878ace082dfb51c542 *man/X.Rd
 b91e18cc334e16c825877395e82a632c *man/autism.Rd

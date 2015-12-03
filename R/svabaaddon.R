@@ -14,10 +14,14 @@ function(params, x) {
 
   ##require("sva")
 
-  fsvaobj <- sva::fsva(dbdat = t(params$xtrain), mod = cbind(1, as.numeric(params$ytrain)-1), sv=params$svobj,
-    newdat = t(x), method=params$algorithm)
-
-  xadj <- t(fsvaobj$new)
+  if (!is.null(params$svobj)) {
+    fsvaobj <- sva::fsva(dbdat = t(params$xtrain), mod = cbind(1, 
+        as.numeric(params$ytrain) - 1), sv = params$svobj, newdat = t(x), 
+        method = params$algorithm)
+    xadj <- t(fsvaobj$new)
+  }
+  else
+    xadj <- x
 
   return(xadj)
 
