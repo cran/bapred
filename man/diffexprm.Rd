@@ -52,7 +52,7 @@ with the smallest p-values.
 Value of the metric
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2015) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. Tech. Rep. 184, Department of Statistics, University of Munich.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 
 Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís,
 D. Y., Duque, R., Bersini, H., Nowé, A. (2012) Batch effect removal methods for

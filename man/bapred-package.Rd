@@ -31,7 +31,7 @@ Maintainer: Roman Hornung
   \email{hornung@ibe.med.uni-muenchen.de}
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2015) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. Tech. Rep. 184, Department of Statistics, University of Munich.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 }
 \examples{
 # Load example dataset:

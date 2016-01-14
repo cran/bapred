@@ -57,7 +57,7 @@ An object of class "\code{fabatch}" is a list containing the following component
 \item{nbfvec}{ vector containing the numbers of factors in the individual batches }
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2015) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. Tech. Rep. 184, Department of Statistics, University of Munich.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 }
 \author{
 Roman Hornung

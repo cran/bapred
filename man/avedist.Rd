@@ -37,7 +37,7 @@ Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weis
 D. Y., Duque, R., Bersini, H., Nowé, A. (2012) Batch effect removal methods for
 microarray gene expression data integration: a survey. Briefings in Bioinformatics, 14(4), 469-490.
 
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2015) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. Tech. Rep. 184, Department of Statistics, University of Munich.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 }
 \author{
 Roman Hornung

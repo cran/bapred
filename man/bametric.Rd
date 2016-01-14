@@ -44,7 +44,7 @@ Boltz, S., Debreuve, E., Barlaud, M. (2009) High-dimensional statistical measure
 
 Geyer, C. J., Meeden, G., D. (2005) Fuzzy and randomized confidence intervals and p-values (with discussion). Statistical Science, 20(4), 358-387.
 
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2015) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. Tech. Rep. 184, Department of Statistics, University of Munich.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 
 Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís,
 D. Y., Duque, R., Bersini, H., Nowé, A. (2012) Batch effect removal methods for

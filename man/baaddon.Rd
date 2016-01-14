@@ -27,7 +27,7 @@ factor. Batch variable of the new data. Currently has to have levels: '1', '2', 
 The adjusted covariate matrix of the test data.
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2015) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. Tech. Rep. 184, Department of Statistics, University of Munich.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 
 Johnson, W. E., Rabinovic, A., Li, C. (2007) Adjusting batch effects in microarray expression data using empirical bayes methods. Biostatistics, 8, 118-127.
 

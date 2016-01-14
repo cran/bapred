@@ -45,7 +45,7 @@ Lee, J. A., Dobbin, K. K., Ahn, J. (2014) Covariance adjustment for batch effect
 
 Boltz, S., Debreuve, E., Barlaud, M. (2009) High-dimensional statistical measure for region-of-interest tracking. Transactions in Image Processing, 18(6), 1266-1283.
 
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2015) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. Tech. Rep. 184, Department of Statistics, University of Munich.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 }
 \author{
 Roman Hornung
