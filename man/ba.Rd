@@ -5,7 +5,7 @@
 Batch effect adjustment using a method of choice
 }
 \description{
-Performs batch effect adjustment using one of the following methods: FAbatch, ComBat, SVA, mean-centering, standardization, Ratio-A, Ratio-G or "no batch effect adjustment". Additionally returns information necessary for addon batch effect adjustment with the respective method.
+Performs batch effect adjustment using one of the following methods: FAbatch, ComBat, SVA, mean-centering, standardization, Ratio-A, Ratio-G or "no batch effect adjustment". Additionally returns information necessary for addon batch effect adjustment with the respective method. The latter can be done using \code{\link{baaddon}}.
 }
 \usage{
 ba(x, y, batch, method = c("fabatch", "combat", "sva", "meancenter", 
@@ -36,7 +36,9 @@ This function is merely for convenience - a wrapper function for \code{\link{fab
 The output of \code{\link{fabatch}}, \code{\link{combatba}}, \code{\link{svaba}}, \code{\link{meancenter}}, \code{\link{standardize}}, \code{\link{ratioa}}, \code{\link{ratiog}} or \code{\link{noba}} respectively.
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016a) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016b). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
 
 Johnson, W. E., Rabinovic, A., Li, C. (2007) Adjusting batch effects in microarray expression data using empirical bayes methods. Biostatistics, 8, 118-127.
 
@@ -48,6 +50,12 @@ Parker, H. S., Bravo, H. C., Leek, J. T. (2014) Removing batch effects for predi
 }
 \author{
 Roman Hornung
+}
+\note{
+
+\bold{The following methods are NOT recommended in cross-study prediction settings}: FAbatch (\code{\link{fabatch}}), frozen SVA (\code{\link{svaba}}), standardization (\code{\link{standardize}}) as well as no addon batch effect adjustment (\code{\link{noba}}). 
+
+Given a not too small test set, \bold{the following methods are recommended} (Hornung et al., 2016b): ComBat (\code{\link{combatba}}), mean-centering (\code{\link{meancenter}}), Ratio-A (\code{\link{ratioa}}), Ratio-G (\code{\link{ratiog}}).
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

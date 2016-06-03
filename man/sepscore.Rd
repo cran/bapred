@@ -2,10 +2,10 @@
 \alias{sepscore}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Separation score as described in Hornung et al. (2015)
+Separation score as described in Hornung et al. (2016)
 }
 \description{
-This metric described in Hornung et al. (2015) was derived from the mixture score 
+This metric described in Hornung et al. (2016) was derived from the mixture score 
 presented in Lazar et al. (2012). In contrast to the mixture score the 
 separation score does not measure the degree of mixing but the degree of 
 separation between the batches. Moreover it is less dependent on the 

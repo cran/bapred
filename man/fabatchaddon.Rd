@@ -27,12 +27,16 @@ factor. Batch variable of the new data. Currently has to have levels: '1', '2', 
 The adjusted covariate matrix of the test data.
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016a) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016b). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
 }
 \author{
 Roman Hornung
 }
-
+\note{
+It is \bold{not recommended} to perform FAbatch in cross-study prediction settings, because it has been observed to (strongly) impair prediction performance. Given a not too small test set, the following methods are recommended (Hornung et al., 2016b): \code{\link{combatba}}, \code{\link{meancenter}}, \code{\link{ratioa}}, \code{\link{ratiog}}.
+}
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{

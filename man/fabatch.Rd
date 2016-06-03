@@ -5,7 +5,7 @@
 Batch effect adjustment using FAbatch
 }
 \description{
-Performs batch effect adjustment using the FAbatch-method described in Hornung et al. (2015) and additionally returns information necessary for addon batch effect adjustment with FAbatch.
+Performs batch effect adjustment using the FAbatch-method described in Hornung et al. (2016) and additionally returns information necessary for addon batch effect adjustment with FAbatch.
 }
 \usage{
 fabatch(x, y, batch, nbf = NULL, minerr = 1e-06, 

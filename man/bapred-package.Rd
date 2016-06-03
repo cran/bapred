@@ -6,23 +6,27 @@
 The bapred package
 }
 \description{
-This is a short summary of the features of \pkg{bapred}, a package in \R for the treatment and analysis of batch effects.
+This is a short summary of the features of \pkg{bapred}, a package in \R for the treatment and analysis of batch effects based in high-dimensional molecular data via batch effect adjustment and addon quantile normalization. Here, a special focus is set on phenotype prediction in the presence of batch effects.
 }
 \details{
-Various tools dealing with batch effects, in particular
-enabling the removal of discrepancies between training and test sets in prediction
-scenarios. The following batch effect removal methods are implemented: FAbatch,
-ComBat, (f)SVA, mean-centering, standardization, Ratio-A and Ratio-G.
-For each of these we provide an additional function which enables
-a posteriori ('addon') batch effect removal in independent batches ('test data'). Here,
-the (already batch effect adjusted) training data is not altered.
-For evaluating the success of batch effect adjustment several metrics are provided.
-Moreover, the package implements a plot for the visualization of batch effects
-using principal component analysis.
-The main functions of the package are \code{\link{ba}()} and \code{\link{baaddon}()} which enable batch effect removal
-and addon batch effect removal, respectively, with one of the seven methods mentioned above.
-Another important function is \code{\link{bametric}()} which is a wrapper function for all implemented
-methods for evaluating the success of batch effect removal.
+Various tools dealing with batch effects, in particular enabling the 
+removal of discrepancies between training and test sets in prediction scenarios.
+Moreover, addon quantile normalization and addon RMA normalization (Kostka & Spang, 
+2008) is implemented to enable integrating the quantile normalization step into 
+prediction rules. The following batch effect removal methods are implemented: 
+FAbatch, ComBat, (f)SVA, mean-centering, standardization, Ratio-A and Ratio-G. 
+For each of these we provide  an additional function which enables a posteriori 
+('addon') batch effect removal in independent batches ('test data'). Here, the
+(already batch effect adjusted) training data is not altered. For evaluating the
+success of batch effect adjustment several metrics are provided. Moreover, the 
+package implements a plot for the visualization of batch effects using principal 
+component analysis. The main functions of the package for batch effect adjustment 
+are \code{\link{ba}()} and \code{\link{baaddon}()} which enable batch effect removal and addon batch effect 
+removal, respectively, with one of the seven methods mentioned above. Another 
+important function here is \code{\link{bametric}()} which is a wrapper function for all implemented
+methods for evaluating the success of batch effect removal. For (addon) quantile 
+normalization and (addon) RMA normalization the functions \code{\link{qunormtrain}()}, 
+\code{\link{qunormaddon}()}, \code{\link{rmatrain}()} and \code{\link{rmaaddon}()} can be used.
 }
 \author{
 Roman Hornung, David Causeur
@@ -31,7 +35,9 @@ Maintainer: Roman Hornung
   \email{hornung@ibe.med.uni-muenchen.de}
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016a) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016b). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
 }
 \examples{
 # Load example dataset:
@@ -125,4 +131,14 @@ pcplot(x=Xsub, batch=batchsub, y=ysub, alpha=0.75, main="alpha = 0.75")
 pcplot(x=Xsub, batch=batchsub, y=ysub, col=1:length(unique(batchsub)), 
   main="col = 1:length(unique(batchsub))")
 par(mfrow=c(1,1))
+
+
+
+# (Addon) quantile normalization:
+
+qunormparams <- qunormtrain(x=Xsubtrain)
+
+Xtrainnorm <- qunormparams$xnorm
+
+Xtestaddonnorm <- qunormaddon(qunormparams, x=Xsubtest)
 }

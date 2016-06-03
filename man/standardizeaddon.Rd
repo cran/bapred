@@ -31,12 +31,16 @@ factor. Batch variable of the new data. Currently has to have levels: '1', '2', 
 The adjusted covariate matrix of the test data.
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016a). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
+
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016b) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
 }
 \author{
 Roman Hornung
 }
 \note{
+It is \bold{not recommended} to perform standardization in cross-study prediction settings, because for some classifiers the prediction performance can be strongly impaired by this method. Given a not too small test set, the following methods are recommended (Hornung et al., 2016a): \code{\link{combatba}}, \code{\link{meancenter}}, \code{\link{ratioa}}, \code{\link{ratiog}}.
+
 Because standardization is performed "batch by batch" the "addon procedure" for standardization consists of plain standardization on the new test batches.
 }
 

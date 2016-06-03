@@ -27,7 +27,9 @@ factor. Batch variable of the new data. Currently has to have levels: '1', '2', 
 The adjusted covariate matrix of the test data.
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016a) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016b). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
 
 Johnson, W. E., Rabinovic, A., Li, C. (2007) Adjusting batch effects in microarray expression data using empirical bayes methods. Biostatistics, 8, 118-127.
 
@@ -39,6 +41,12 @@ Parker, H. S., Bravo, H. C., Leek, J. T. (2014) Removing batch effects for predi
 }
 \author{
 Roman Hornung
+}
+\note{
+
+\bold{The following methods are NOT recommended in cross-study prediction settings}: FAbatch (\code{\link{fabatch}}), frozen SVA (\code{\link{svaba}}), standardization (\code{\link{standardize}}) as well as no addon batch effect adjustment (\code{\link{noba}}). 
+
+Given a not too small test set, \bold{the following methods are recommended} (Hornung et al., 2016b): ComBat (\code{\link{combatba}}), mean-centering (\code{\link{meancenter}}), Ratio-A (\code{\link{ratioa}}), Ratio-G (\code{\link{ratiog}}).
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

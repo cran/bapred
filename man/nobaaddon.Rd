@@ -30,11 +30,15 @@ factor. Batch variable of the new data. Currently has to have levels: '1', '2', 
 \value{
 The unadjusted covariate matrix \code{x} of the test data.
 }
-
+\references{
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
+}
 \author{
 Roman Hornung
 }
-
+\note{
+It is \bold{not recommended} to perform no addon batch effect adjustment in cross-study prediction settings. Given a not too small test set, the following methods are recommended (Hornung et al., 2016): \code{\link{combatba}}, \code{\link{meancenter}}, \code{\link{ratioa}}, \code{\link{ratiog}}.
+}
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{

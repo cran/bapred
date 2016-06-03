@@ -27,9 +27,14 @@ The adjusted covariate matrix of the test data.
 Leek, J. T., Storey, J. D. (2007) Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis. PLoS Genetics, 3, 1724--1735.
 
 Parker, H. S., Bravo, H. C., Leek, J. T. (2014) Removing batch effects for prediction problems with frozen surrogate variable analysis. PeerJ, 2, e561.
+
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
 }
 \author{
 Roman Hornung
+}
+\note{
+It is \bold{not recommended} to perform frozen SVA in cross-study prediction settings, because it assumes similarity between training and test set and has been observed to (strongly) impair prediction performance in cases where this assumption is not given. Given a not too small test set, the following methods are recommended (Hornung et al., 2016): \code{\link{combatba}}, \code{\link{meancenter}}, \code{\link{ratioa}}, \code{\link{ratiog}}.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

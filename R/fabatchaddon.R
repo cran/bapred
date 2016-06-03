@@ -47,7 +47,7 @@ function(params, x, batch) {
    scaledxb = xb
    for (i in 1:nbatches) {
      scaledxb[batch==batches[i],setdiff(1:nvars, badvariableslisthere[[i]])] = 
-	   scale(xb[batch==batches[i],setdiff(1:nvars, badvariableslisthere[[i]])],center=rep(0,nvars),scale=sdb[[i]][setdiff(1:nvars, badvariableslisthere[[i]])])
+	   scale(xb[batch==batches[i],setdiff(1:nvars, badvariableslisthere[[i]])],center=rep(0,nvars-length(badvariableslisthere[[i]])),scale=sdb[[i]][setdiff(1:nvars, badvariableslisthere[[i]])])
    }   
    
    # Predict probabilities using the model estimated on the training data:
