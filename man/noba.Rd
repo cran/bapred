@@ -16,7 +16,7 @@ noba(x, batch)
 matrix. The covariate matrix. Observations in rows, variables in columns.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
 }
 

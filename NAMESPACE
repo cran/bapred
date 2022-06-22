@@ -36,3 +36,4 @@ importFrom("affyPLM", "rmaPLM")
 importFrom("Biobase", "exprs",
            "phenoData", "protocolData", 
 		   "featureData", "description", "experimentData", "notes")
+importFrom("methods", "new")

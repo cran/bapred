@@ -20,7 +20,7 @@ sepscore(xba, batch, k = 10)
 matrix. The covariate matrix, raw or after batch effect adjustment. observations in rows, variables in columns.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
   \item{k}{
 integer. Number of nearest neighbors.
@@ -45,11 +45,9 @@ the weighted average of the values in 1) with weights proportional to the sum of
 Value of the metric
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016). Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27, <\doi{10.1186/s12859-015-0870-z}>.
 
-Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís,
-D. Y., Duque, R., Bersini, H., Nowé, A. (2012) Batch effect removal methods for
-microarray gene expression data integration: a survey. Briefings in Bioinformatics, 14(4), 469-490.
+Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís, D. Y., Duque, R., Bersini, H., Nowé, A. (2012). Batch effect removal methods for microarray gene expression data integration: a survey. Briefings in Bioinformatics 14(4):469-490, <\doi{10.1093/bib/bbs037}>.
 }
 \author{
 Roman Hornung

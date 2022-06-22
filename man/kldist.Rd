@@ -19,7 +19,7 @@ kldist(xba, batch)
 matrix. The covariate matrix, raw or after batch effect adjustment. observations in rows, variables in columns.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
 }
 \details{
@@ -41,11 +41,11 @@ The variables are standardized before the calculation to make the metric indepen
 Value of the metric
 }
 \references{
-Lee, J. A., Dobbin, K. K., Ahn, J. (2014) Covariance adjustment for batch effect in gene expression data. Statistics in Medicine, 33, 2681-2695.
+Lee, J. A., Dobbin, K. K., Ahn, J. (2014). Covariance adjustment for batch effect in gene expression data. Statistics in Medicine 33:2681-2695, <\doi{10.1002/sim.6157}>.
 
-Boltz, S., Debreuve, E., Barlaud, M. (2009) High-dimensional statistical measure for region-of-interest tracking. Transactions in Image Processing, 18(6), 1266-1283.
+Boltz, S., Debreuve, E., Barlaud, M. (2009). High-dimensional statistical measure for region-of-interest tracking. Transactions in Image Processing 18(6):1266-1283, <\doi{10.1109/TIP.2009.2015158}>.
 
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016). Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27, <\doi{10.1186/s12859-015-0870-z}>.
 }
 \author{
 Roman Hornung

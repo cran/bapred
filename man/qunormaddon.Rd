@@ -26,7 +26,7 @@ This function uses code from the off-CRAN package \code{docval}, version 1.0.
 The covariate matrix of the test data after addon quantile normalization. Observations in rows, variables in columns.
 }
 \references{
-Kostka, D., Spang, R. (2008). Microarray based diagnosis profits from better documentation of gene expression signatures. PLoS Computational Biology, 4(2), e22.
+Kostka, D., Spang, R. (2008). Microarray based diagnosis profits from better documentation of gene expression signatures. PLoS Computational Biology 4(2):e22, <\doi{10.1371/journal.pcbi.0040022}>.
 }
 \author{
 Roman Hornung

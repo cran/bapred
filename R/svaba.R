@@ -5,8 +5,8 @@ function(x, y, batch, nbf=NULL, algorithm="fast") {
 	stop("Data contains missing values.")
   if(!is.matrix(x))
     stop("'x' has to be of class 'matrix'.") 
-  if(!(is.factor(y) & all(levels(y)==(1:2))))
-    stop("'y' has to be of class 'factor' with levels '1' and '2'.")
+  if(!(is.factor(y) & length(levels(y))==2))
+    stop("'y' has to be of class 'factor' with two levels.")
 
   ##require("sva")
 

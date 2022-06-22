@@ -18,7 +18,7 @@ skewdiv(xba, batch)
 matrix. The covariate matrix, raw or after batch effect adjustment. observations in rows, variables in columns.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
 }
 \details{
@@ -38,7 +38,7 @@ The variables are standardized before the calculation to make the metric indepen
 Value of the metric
 }
 \references{
-Shabalin, A. A., Tjelmeland, H., Fan, C., Perou, C. M., Nobel, A. B. (2008) Merging two gene-expression studies via cross-platform normalization. Bioinformatics, 24(9), 1154-1160.
+Shabalin, A. A., Tjelmeland, H., Fan, C., Perou, C. M., Nobel, A. B. (2008). Merging two gene-expression studies via cross-platform normalization. Bioinformatics 24(9):1154-1160, <\doi{10.1093/bioinformatics/btn083}>.
 }
 \author{
 Roman Hornung

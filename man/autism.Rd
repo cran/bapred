@@ -22,7 +22,7 @@ The RNA measurements were obtained by the Illumina HumanRef-8 v3.0 Expression Be
 ArrayExpress, accession number: E-GEOD-37772
 }
 \references{
-Luo, R., Sanders, S. J., Tian, Y., Voineagu, I., Huang, N., Chu, S. H., Klei, L., Cai, C., Ou, J., Lowe, J. K., Hurles, M. E., Devlin, B., State, M. W., Geschwind, D. H. (2012) Genome-wide Transcriptome Profiling Reveals the Functional Impact of Rare De Novo and Recurrent CNVs in Autism Spectrum Disorders. The American Journal of Human Genetics, 91, 38-–55.
+Luo, R., Sanders, S. J., Tian, Y., Voineagu, I., Huang, N., Chu, S. H., Klei, L., Cai, C., Ou, J., Lowe, J. K., Hurles, M. E., Devlin, B., State, M. W., Geschwind, D. H. (2012). Genome-wide Transcriptome Profiling Reveals the Functional Impact of Rare De Novo and Recurrent CNVs in Autism Spectrum Disorders. The American Journal of Human Genetics 91:38–55, <\doi{10.1016/j.ajhg.2012.05.011}>.
 }
 \examples{
 data(autism)

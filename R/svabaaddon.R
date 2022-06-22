@@ -6,7 +6,7 @@ function(params, x) {
   if(!is.matrix(x))
     stop("'x' has to be of class 'matrix'.") 
 
-  if(class(params) != "svatrain")
+  if(!inherits(params, "svatrain"))
      stop("Input parameter 'params' has to be of class 'svatrain'.")
 	 
   if(ncol(params$xadj) != ncol(x))

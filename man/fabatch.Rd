@@ -17,10 +17,10 @@ fabatch(x, y, batch, nbf = NULL, minerr = 1e-06,
 matrix. The covariate matrix. Observations in rows, variables in columns.
 }
   \item{y}{
-factor. Binary target variable. Currently has to have levels '1' and '2'.
+factor. Binary target variable. Has to have two factor levels, where each of them correponds to one of the two classes of the target variable.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
   \item{nbf}{
 integer. Number of factors to estimate in all batches. If not given the number of factors is estimated automatically for each batch. Recommended to leave unspecified.
@@ -57,7 +57,7 @@ An object of class "\code{fabatch}" is a list containing the following component
 \item{nbfvec}{ vector containing the numbers of factors in the individual batches }
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016). Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27, <\doi{10.1186/s12859-015-0870-z}>.
 }
 \author{
 Roman Hornung

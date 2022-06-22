@@ -2,12 +2,12 @@ Package: bapred
 Type: Package
 Title: Batch Effect Removal and Addon Normalization (in Phenotype
         Prediction using Gene Data)
-Version: 1.0
-Date: 2016-06-02
+Version: 1.1
+Date: 2022-06-21
 Author: Roman Hornung, David Causeur
 Maintainer: Roman Hornung <hornung@ibe.med.uni-muenchen.de>
 Depends: R (>= 3.1.0), glmnet, lme4, MASS, sva, affyPLM
-Imports: FNN, fuzzyRankTests, mnormt, affy, Biobase
+Imports: FNN, fuzzyRankTests, methods, mnormt, affy, Biobase
 Suggests: ArrayExpress
 Description: Various tools dealing with batch effects, in particular enabling the 
   removal of discrepancies between training and test sets in prediction scenarios.
@@ -30,6 +30,6 @@ Description: Various tools dealing with batch effects, in particular enabling th
 License: GPL-2
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2016-06-03 16:58:52 UTC; hornung
+Packaged: 2022-06-21 17:44:28 UTC; hornung
 Repository: CRAN
-Date/Publication: 2016-06-03 19:12:25
+Date/Publication: 2022-06-22 08:20:13 UTC

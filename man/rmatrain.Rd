@@ -26,7 +26,7 @@ An object of class "\code{rmatrain}" is a list containing the following componen
 \item{rmadoc, sumdoc.rma, nfeature}{ information necessary for addon RMA normalization }
 }
 \references{
-Kostka, D., Spang, R. (2008). Microarray based diagnosis profits from better documentation of gene expression signatures. PLoS Computational Biology, 4(2), e22.
+Kostka, D., Spang, R. (2008). Microarray based diagnosis profits from better documentation of gene expression signatures. PLoS Computational Biology 4(2):e22, <\doi{10.1371/journal.pcbi.0040022}>.
 }
 \author{
 Roman Hornung

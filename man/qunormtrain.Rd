@@ -26,7 +26,7 @@ An object of class "\code{qunormtrain}" is a list containing the following compo
 \item{mqnts}{ Vector of length ncol(xnorm). Averages of sorted values, with averages taken across observations. }
 }
 \references{
-Kostka, D., Spang, R. (2008). Microarray based diagnosis profits from better documentation of gene expression signatures. PLoS Computational Biology, 4(2), e22.
+Kostka, D., Spang, R. (2008). Microarray based diagnosis profits from better documentation of gene expression signatures. PLoS Computational Biology 4(2):e22, <\doi{10.1371/journal.pcbi.0040022}>.
 }
 \author{
 Roman Hornung

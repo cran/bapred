@@ -24,11 +24,11 @@ matrix. The covariate matrix of the new data. Observations in rows, variables in
 The adjusted covariate matrix of the test data.
 }
 \references{
-Leek, J. T., Storey, J. D. (2007) Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis. PLoS Genetics, 3, 1724--1735.
+Leek, J. T., Storey, J. D. (2007). Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis. PLoS Genetics 3:1724-1735, <\doi{10.1371/journal.pgen.0030161}>.
 
-Parker, H. S., Bravo, H. C., Leek, J. T. (2014) Removing batch effects for prediction problems with frozen surrogate variable analysis. PeerJ, 2, e561.
+Parker, H. S., Bravo, H. C., Leek, J. T. (2014). Removing batch effects for prediction problems with frozen surrogate variable analysis. PeerJ 2:e561, <\doi{10.7717/peerj.561}>.
 
-Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2017). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Bioinformatics 33(3):397–404, <\doi{10.1093/bioinformatics/btw650}>.
 }
 \author{
 Roman Hornung

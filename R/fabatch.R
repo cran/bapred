@@ -3,12 +3,12 @@ function(x, y, batch, nbf=NULL, minerr=1e-06, probcrossbatch=TRUE, maxiter=100, 
     
   if(any(is.na(x)))
 	stop("Data contains missing values.")
-  if(!(is.factor(batch) & all(levels(batch)==(1:length(levels(batch))))))
-    stop("'batch' has to be of class 'factor' with levels '1','2',...")  
+  if(!is.factor(batch))
+    stop("'batch' has to be of class 'factor'.")  
   if(!is.matrix(x))
     stop("'x' has to be of class 'matrix'.") 
-  if(!(is.factor(y) & all(levels(y)==(1:2))))
-    stop("'y' has to be of class 'factor' with levels '1' and '2'.")
+  if(!(is.factor(y) & length(levels(y))==2))
+    stop("'y' has to be of class 'factor' with two levels.")
   if(max(table(batch)) >= ncol(x))
     stop("The sample size within each batch has to be smaller than the number of variables.")
   if((length(batch)!=length(y)) | (length(y)!=nrow(x)))
@@ -198,7 +198,7 @@ function(x, y, batch, nbf=NULL, minerr=1e-06, probcrossbatch=TRUE, maxiter=100, 
 	 
      pooledsdsbad <- mapply(function(x, y) {
       if(!all(y)) {
-        return(sd(x[batch %in% which(!y)]))
+        return(sd(x[batch %in% levels(batch)[which(!y)]]))
       }
       else
         return(1)
@@ -207,7 +207,7 @@ function(x, y, batch, nbf=NULL, minerr=1e-06, probcrossbatch=TRUE, maxiter=100, 
      mubadvar <- colMeans(xbadvar)
      xbadvaradj <- matrix(nrow=nrow(xsafe), ncol=length(badvariables), data=mubadvar, byrow=TRUE)
      for(i in 1:nbatches)
-       xbadvaradj[batch==i,] <- xbadvaradj[batch==i,,drop=FALSE] + sweep(scale(xbadvar[batch==i,,drop=FALSE], center=TRUE, scale=sdbbad0to1[[i]]), 2, pooledsdsbad, "*")
+       xbadvaradj[batch==levels(batch)[i],] <- xbadvaradj[batch==levels(batch)[i],,drop=FALSE] + sweep(scale(xbadvar[batch==levels(batch)[i],,drop=FALSE], center=TRUE, scale=sdbbad0to1[[i]]), 2, pooledsdsbad, "*")
      xfanew <- matrix(nrow=nrow(xsafe), ncol=ncol(xsafe))
      xfanew[,goodvariables] <- xfa
      xfanew[,badvariables] <- xbadvaradj

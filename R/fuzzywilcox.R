@@ -2,7 +2,7 @@ fuzzywilcox <-
 function(x, y) {
 
   ##require("fuzzyRankTests")
-  fuzzytestobj <- fuzzyRankTests::fuzzy.ranksum.test(x[y==1], x[y==2])
+  fuzzytestobj <- fuzzyRankTests::fuzzy.ranksum.test(x[y==levels(y)[1]], x[y==levels(y)[2]])
 
   u <- runif(1)
   lowerind <- max(which((u-fuzzytestobj$values)>0))

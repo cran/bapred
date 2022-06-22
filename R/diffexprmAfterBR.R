@@ -19,7 +19,7 @@ function(x, xbrlist, y, batch, batchessuited) {
   signleavebatchout <- apply(pvalleavebatchout, 2, function(y) y <= sort(y)[floor(ncol(x)*0.05)])
 
   freqcommon <- apply(signbatches + signleavebatchout, 2, function(y) sum(y==2))/floor(ncol(x)*0.05)
-  batchtab <- sapply(1:length(levels(batch)), function(y) sum(batch==y))
+  batchtab <- sapply(levels(batch), function(y) sum(batch==y))
 
   sum(batchtab[batchessuited]*freqcommon)/sum(batchtab[batchessuited])
 

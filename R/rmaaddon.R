@@ -1,6 +1,6 @@
 rmaaddon <- function(params, affybatchtest) {
     
-    if(class(params) != "rmatrain")
+    if(!inherits(params, "rmatrain"))
       stop("Input parameter 'params' has to be of class 'rmatrain'.")
 	
     rmadoc <- params$rmadoc

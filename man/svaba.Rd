@@ -16,10 +16,10 @@ svaba(x, y, batch, nbf = NULL, algorithm = "fast")
 matrix. The covariate matrix. Observations in rows, variables in columns.
 }
   \item{y}{
-factor. Binary target variable. Currently has to have levels '1' and '2'.
+factor. Binary target variable. Has to have two factor levels, where each of them correponds to one of the two classes of the target variable.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
   \item{nbf}{
 integer. Number of latent factors to estimate.
@@ -43,9 +43,9 @@ An object of class "\code{svatrain}" is a list containing the following componen
 \item{batch}{ batch variable }
 }
 \references{
-Leek, J. T., Storey, J. D. (2007) Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis. PLoS Genetics, 3, 1724--1735.
+Leek, J. T., Storey, J. D. (2007). Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis. PLoS Genetics 3:1724-1735, <\doi{10.1371/journal.pgen.0030161}>.
 
-Parker, H. S., Bravo, H. C., Leek, J. T. (2014) Removing batch effects for prediction problems with frozen surrogate variable analysis. PeerJ, 2, e561.
+Parker, H. S., Bravo, H. C., Leek, J. T. (2014). Removing batch effects for prediction problems with frozen surrogate variable analysis. PeerJ 2:e561, <\doi{10.7717/peerj.561}>.
 }
 \author{
 Roman Hornung

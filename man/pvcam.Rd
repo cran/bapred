@@ -16,10 +16,10 @@ pvcam(xba, batch, y, threshold = 0.6)
 matrix. The covariate matrix, raw or after batch effect adjustment. observations in rows, variables in columns.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
   \item{y}{
-factor. Binary target variable. Currently has to have levels '1' and '2'.
+factor. Binary target variable. Has to have two factor levels, where each of them correponds to one of the two classes of the target variable.
 }
   \item{threshold}{
 numeric. Minimal proportion of variance explained by the principal components used.
@@ -41,7 +41,7 @@ The latter was altered to take the covariate data as a \code{matrix} instead of 
 Value of the metric
 }
 \references{
-Li, J., Bushel, P., Chu, T.-M., Wolfinger, R.D. (2009) Principal variance components analysis: Estimating batch effects in microarray gene expression data. In: Scherer, A. (ed) Batch Effects and Noise in Microarray Experiments: Sources and Solutions, John Wiley & Sons, Chichester, UK.
+Li, J., Bushel, P., Chu, T.-M., Wolfinger, R.D. (2009). Principal variance components analysis: Estimating batch effects in microarray gene expression data. In: Scherer, A. (ed) Batch Effects and Noise in Microarray Experiments: Sources and Solutions, John Wiley & Sons, Chichester, UK, <\doi{10.1002/9780470685983.ch12}>.
 }
 \author{
 Roman Hornung

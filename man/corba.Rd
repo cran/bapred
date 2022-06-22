@@ -24,9 +24,7 @@ matrix. The covariate matrix before batch effect adjustment. observations in row
 Value of the metric
 }
 \references{
-Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís,
-D. Y., Duque, R., Bersini, H., Nowé, A. (2012) Batch effect removal methods for
-microarray gene expression data integration: a survey. Briefings in Bioinformatics, 14(4), 469-490.
+Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís, D. Y., Duque, R., Bersini, H., Nowé, A. (2012). Batch effect removal methods for microarray gene expression data integration: a survey. Briefings in Bioinformatics 14(4):469-490, <\doi{10.1093/bib/bbs037}>.
 }
 \author{
 Roman Hornung

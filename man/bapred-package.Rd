@@ -35,9 +35,9 @@ Maintainer: Roman Hornung
   \email{hornung@ibe.med.uni-muenchen.de}
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016a) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016). Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27, <\doi{10.1186/s12859-015-0870-z}>.
 
-Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2016b). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Technical Report, Department of Statistics, LMU.
+Hornung, R., Causeur, D., Bernau, C., Boulesteix, A.-L. (2017). Improving cross-study prediction through addon batch effect adjustment and addon normalization. Bioinformatics 33(3):397–404, <\doi{10.1093/bioinformatics/btw650}>.
 }
 \examples{
 # Load example dataset:

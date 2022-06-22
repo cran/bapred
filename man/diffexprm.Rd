@@ -25,10 +25,10 @@ diffexprm(x, batch, y, method = c("fabatch", "combat", "sva",
 matrix. The covariate matrix. Observations in rows, variables in columns.
 }
   \item{batch}{
-factor. Batch variable. Currently has to have levels: '1', '2', '3' and so on.
+factor. Batch variable. Each factor level (or 'category') corresponds to one of the batches. For example, if there are four batches, this variable would have four factor levels and observations with the same factor level would belong to the same batch.
 }
   \item{y}{
-factor. Binary target variable. Currently has to have levels '1' and '2'.
+factor. Binary target variable. Has to have two factor levels, where each of them correponds to one of the two classes of the target variable.
 }
   \item{method}{
 character. Method for batch effect adjustment. The following are supported: \code{fabatch}, \code{combat}, \code{fsva}, \code{meancenter}, \code{standardize}, \code{ratioa}, \code{ratiog} and \code{none}
@@ -52,13 +52,11 @@ with the smallest p-values.
 Value of the metric
 }
 \references{
-Hornung, R., Boulesteix, A.-L., Causeur, D. (2016) Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27.
+Hornung, R., Boulesteix, A.-L., Causeur, D. (2016). Combining location-and-scale batch effect adjustment with data cleaning by latent factor adjustment. BMC Bioinformatics 17:27, <\doi{10.1186/s12859-015-0870-z}>.
 
-Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís,
-D. Y., Duque, R., Bersini, H., Nowé, A. (2012) Batch effect removal methods for
-microarray gene expression data integration: a survey. Briefings in Bioinformatics, 14(4), 469-490.
+Lazar, C., Meganck, S., Taminau, J., Steenhoff, D., Coletta, A., Molter,C., Weiss-Solís, D. Y., Duque, R., Bersini, H., Nowé, A. (2012). Batch effect removal methods for microarray gene expression data integration: a survey. Briefings in Bioinformatics 14(4):469-490, <\doi{10.1093/bib/bbs037}>.
 
-Geyer, C. J., Meeden, G., D. (2005) Fuzzy and randomized confidence intervals and p-values (with discussion). Statistical Science, 20(4), 358-387.
+Geyer, C. J., Meeden, G., D. (2005). Fuzzy and randomized confidence intervals and p-values (with discussion). Statistical Science 20(4):358-387, <\doi{10.1214/088342305000000340}>.
 }
 \author{
 Roman Hornung

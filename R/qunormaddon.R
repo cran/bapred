@@ -1,7 +1,7 @@
 qunormaddon <- 
 function(params, x) {
 
-  if (class(params) != "qunormtrain") 
+  if (!inherits(params, "qunormtrain")) 
     stop("Input parameter 'params' has to be of class 'qunormparam'.")
   xnorm <- x
   for (i in 1:nrow(x)) {
